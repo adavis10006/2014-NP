@@ -1,0 +1,21 @@
+login1
+login2
+login3
+login4
+1:name demo1
+2:name demo2
+3:name demo3
+4:name demo4
+1:tell 5 error
+1:tell 2 '  space test  '
+2:tell 1 did i pass the test ?  ??  ???
+3:yell can  you  guys  stop  whisper
+4:yell what's happening
+1:who
+2:who
+3:who
+4:who
+logout1
+logout3
+logout4
+logout2

@@ -1,0 +1,50 @@
+﻿已經開始建置於 2013/12/24 下午 03:45:33。
+     1>節點 2 (Build 目標) 上的專案 "D:\Dropbox\School\碩一\網程設\project3\code\windows-http\NP_hw3\NP_hw3.vcxproj"。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt multiclient.cpp
+         multiclient.cpp
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.h(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 請參閱 'strcpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.h(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 請參閱 'strcpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(57): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : 請參閱 'strncpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(58): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : 請參閱 'strncpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(68): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 請參閱 'strcpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(97): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(98): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(136): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(154): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(190): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(193): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 請參閱 'fopen' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(233): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(268): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(313): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 請參閱 'sprintf' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(346): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 請參閱 'strcpy' 的宣告
+     1>d:\dropbox\school\碩一\網程設\project3\code\windows-http\np_hw3\multiclient.cpp(377): warning C4018: '<' : signed/unsigned 不相符
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\NP_hw3.exe" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\NP_hw3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\NP_hw3.lib" /MACHINE:X86 /SAFESEH Debug\NP_hw3.res
+         Debug\environment_list.obj
+         Debug\http_handler.obj
+         Debug\http.obj
+         Debug\multiclient.obj
+         Debug\safety_function.obj
+         NP_hw3.vcxproj -> D:\Dropbox\School\碩一\網程設\project3\code\windows-http\NP_hw3\Debug\NP_hw3.exe
+     1>專案 "D:\Dropbox\School\碩一\網程設\project3\code\windows-http\NP_hw3\NP_hw3.vcxproj" (Build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:01.24

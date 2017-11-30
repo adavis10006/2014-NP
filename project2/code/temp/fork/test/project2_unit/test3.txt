@@ -1,0 +1,29 @@
+login1
+login2
+login3
+login4
+1:name demo1
+2:name demo2
+3:name demo3
+4:name demo4
+1:ls >2
+2:cat <1
+2:cat <1
+1:ls | number >5
+1:ls | number | number >2
+1:ls | number >2
+1:cat <2 | number | number |2
+2:cat <1 | number | number
+1:noop
+1:cat
+1:ls >2
+2:cat <1 | number | number >1
+1:cat >2 <2
+2:number <1 >1
+1:cat <2 | number > ls.txt
+2:cat ls.txt
+logout1
+logout2
+logout3
+logout4
+exit

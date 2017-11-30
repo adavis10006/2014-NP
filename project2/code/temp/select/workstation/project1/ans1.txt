@@ -1,0 +1,32 @@
+****************************************
+** Welcome to the information server. **
+****************************************
+*** User '(no name)' entered from 127.0.0.1/43115. ***
+% printenv PATH
+PATH=bin:.
+% ls
+baozi
+bin
+ls.txt
+test.html
+test1.txt
+test2.txt
+% setenv PATH .
+% printenv PATH
+PATH=.
+% ls
+Unknown command: [ls].
+% setenv PATH bin
+% ls -al bin
+total 216
+drwxr-xr-x 2 skchen0510 gcs   4096 Nov 24 22:26 .
+drwxr-xr-x 3 skchen0510 gcs   4096 Nov 24 22:13 ..
+-rwxr--r-- 1 skchen0510 gcs  47944 Nov 24 22:26 cat
+-rwxr--r-- 1 skchen0510 gcs 110120 Nov 24 22:26 ls
+-rwxr-xr-x 1 skchen0510 gcs   6789 Nov 24 22:26 noop
+-rwxr-xr-x 1 skchen0510 gcs  12007 Nov 24 22:26 number
+-rwxr-xr-x 1 skchen0510 gcs   8253 Nov 24 22:26 removetag
+-rwxr-xr-x 1 skchen0510 gcs   9924 Nov 24 22:26 removetag0
+% date
+Unknown command: [date].
+% exit

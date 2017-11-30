@@ -1,0 +1,7 @@
+1.txt
+baozi
+bin
+ls.txt
+test.html
+test1.txt
+test2.txt

@@ -1,0 +1,232 @@
+
+login1
+1| ****************************************
+1| ** Welcome to the information server. **
+1| ****************************************
+1| *** User '(no name)' entered from 127.0.0.1/48175. ***
+1| % 
+
+login2
+1| *** User '(no name)' entered from 127.0.0.1/48176. ***
+2| ****************************************
+2| ** Welcome to the information server. **
+2| ****************************************
+2| *** User '(no name)' entered from 127.0.0.1/48176. ***
+2| % 
+
+login3
+1| *** User '(no name)' entered from 127.0.0.1/48177. ***
+2| *** User '(no name)' entered from 127.0.0.1/48177. ***
+3| ****************************************
+3| ** Welcome to the information server. **
+3| ****************************************
+3| *** User '(no name)' entered from 127.0.0.1/48177. ***
+3| % 
+
+login4
+1| *** User '(no name)' entered from 127.0.0.1/48178. ***
+2| *** User '(no name)' entered from 127.0.0.1/48178. ***
+3| *** User '(no name)' entered from 127.0.0.1/48178. ***
+4| ****************************************
+4| ** Welcome to the information server. **
+4| ****************************************
+4| *** User '(no name)' entered from 127.0.0.1/48178. ***
+4| % 
+
+1 % name demo1
+1| *** User from 127.0.0.1/48175 is named 'demo1'. ***
+1| % 
+2| *** User from 127.0.0.1/48175 is named 'demo1'. ***
+3| *** User from 127.0.0.1/48175 is named 'demo1'. ***
+4| *** User from 127.0.0.1/48175 is named 'demo1'. ***
+
+2 % name demo2
+1| *** User from 127.0.0.1/48176 is named 'demo2'. ***
+2| *** User from 127.0.0.1/48176 is named 'demo2'. ***
+2| % 
+3| *** User from 127.0.0.1/48176 is named 'demo2'. ***
+4| *** User from 127.0.0.1/48176 is named 'demo2'. ***
+
+3 % name demo3
+1| *** User from 127.0.0.1/48177 is named 'demo3'. ***
+2| *** User from 127.0.0.1/48177 is named 'demo3'. ***
+3| *** User from 127.0.0.1/48177 is named 'demo3'. ***
+3| % 
+4| *** User from 127.0.0.1/48177 is named 'demo3'. ***
+
+4 % name demo4
+1| *** User from 127.0.0.1/48178 is named 'demo4'. ***
+2| *** User from 127.0.0.1/48178 is named 'demo4'. ***
+3| *** User from 127.0.0.1/48178 is named 'demo4'. ***
+4| *** User from 127.0.0.1/48178 is named 'demo4'. ***
+4| % 
+
+1 % ls >2
+1| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+1| % 
+2| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+3| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+4| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+
+2 % cat <1
+1| *** demo2 (#2) just received from demo1 (#1) by 'cat <1' ***
+2| baozi
+2| bin
+2| ls.txt
+2| test.html
+2| test1.txt
+2| test2.txt
+2| *** demo2 (#2) just received from demo1 (#1) by 'cat <1' ***
+2| % 
+3| *** demo2 (#2) just received from demo1 (#1) by 'cat <1' ***
+4| *** demo2 (#2) just received from demo1 (#1) by 'cat <1' ***
+
+2 % cat <1
+2| *** Error: the pipe #1->#2 does not exist yet. ***
+2| % 
+
+1 % ls | number >5
+1| *** Error: user #5 does not exist yet. ***
+1| % 
+
+1 % ls | number | number >2
+1| *** demo1 (#1) just piped 'ls | number | number >2' to demo2 (#2) ***
+1| % 
+2| *** demo1 (#1) just piped 'ls | number | number >2' to demo2 (#2) ***
+3| *** demo1 (#1) just piped 'ls | number | number >2' to demo2 (#2) ***
+4| *** demo1 (#1) just piped 'ls | number | number >2' to demo2 (#2) ***
+
+1 % ls | number >2
+1| *** Error: the pipe #1->#2 already exists. ***
+1| % 
+
+1 % ls > ls.txt
+1| % 
+
+1 % cat <2 | ls | number > ls.txt
+1| *** Error: the pipe #2->#1 does not exist yet. ***
+1| % 
+
+1 % cat ls.txt
+1| baozi
+1| bin
+1| ls.txt
+1| test.html
+1| test1.txt
+1| test2.txt
+1| % 
+
+2 % cat <1 | number | number
+1| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number' ***
+2| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number' ***
+2|    1    1    1    1 baozi
+2|    2    2    2    2 bin
+2|    3    3    3    3 ls.txt
+2|    4    4    4    4 test.html
+2|    5    5    5    5 test1.txt
+2|    6    6    6    6 test2.txt
+2| % 
+3| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number' ***
+4| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number' ***
+
+2 % ls >1
+1| *** demo2 (#2) just piped 'ls >1' to demo1 (#1) ***
+2| *** demo2 (#2) just piped 'ls >1' to demo1 (#1) ***
+2| % 
+3| *** demo2 (#2) just piped 'ls >1' to demo1 (#1) ***
+4| *** demo2 (#2) just piped 'ls >1' to demo1 (#1) ***
+
+1 % cat <2 | number | number |2
+1| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number | number |2' ***
+1| % 
+2| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number | number |2' ***
+3| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number | number |2' ***
+4| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number | number |2' ***
+
+1 % noop
+1| % 
+
+1 % cat
+1|    1    1 baozi
+1|    2    2 bin
+1|    3    3 ls.txt
+1|    4    4 test.html
+1|    5    5 test1.txt
+1|    6    6 test2.txt
+1| % 
+
+1 % ls >2
+1| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+1| % 
+2| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+3| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+4| *** demo1 (#1) just piped 'ls >2' to demo2 (#2) ***
+
+2 % cat <1 | number | number >1
+1| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number >1' ***
+1| *** demo2 (#2) just piped 'cat <1 | number | number >1' to demo1 (#1) ***
+2| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number >1' ***
+2| *** demo2 (#2) just piped 'cat <1 | number | number >1' to demo1 (#1) ***
+2| % 
+3| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number >1' ***
+3| *** demo2 (#2) just piped 'cat <1 | number | number >1' to demo1 (#1) ***
+4| *** demo2 (#2) just received from demo1 (#1) by 'cat <1 | number | number >1' ***
+4| *** demo2 (#2) just piped 'cat <1 | number | number >1' to demo1 (#1) ***
+
+1 % cat >2 <2
+1| *** demo1 (#1) just received from demo2 (#2) by 'cat >2 <2' ***
+1| *** demo1 (#1) just piped 'cat >2 <2' to demo2 (#2) ***
+1| % 
+2| *** demo1 (#1) just received from demo2 (#2) by 'cat >2 <2' ***
+2| *** demo1 (#1) just piped 'cat >2 <2' to demo2 (#2) ***
+3| *** demo1 (#1) just received from demo2 (#2) by 'cat >2 <2' ***
+3| *** demo1 (#1) just piped 'cat >2 <2' to demo2 (#2) ***
+4| *** demo1 (#1) just received from demo2 (#2) by 'cat >2 <2' ***
+4| *** demo1 (#1) just piped 'cat >2 <2' to demo2 (#2) ***
+
+2 % number <1 >1
+1| *** demo2 (#2) just received from demo1 (#1) by 'number <1 >1' ***
+1| *** demo2 (#2) just piped 'number <1 >1' to demo1 (#1) ***
+2| *** demo2 (#2) just received from demo1 (#1) by 'number <1 >1' ***
+2| *** demo2 (#2) just piped 'number <1 >1' to demo1 (#1) ***
+2| % 
+3| *** demo2 (#2) just received from demo1 (#1) by 'number <1 >1' ***
+3| *** demo2 (#2) just piped 'number <1 >1' to demo1 (#1) ***
+4| *** demo2 (#2) just received from demo1 (#1) by 'number <1 >1' ***
+4| *** demo2 (#2) just piped 'number <1 >1' to demo1 (#1) ***
+
+1 % cat <2 | number > ls.txt
+1| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number > ls.txt' ***
+1| % 
+2| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number > ls.txt' ***
+3| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number > ls.txt' ***
+4| *** demo1 (#1) just received from demo2 (#2) by 'cat <2 | number > ls.txt' ***
+
+2 % cat ls.txt
+2|    1    1    1    1 baozi
+2|    2    2    2    2 bin
+2|    3    3    3    3 ls.txt
+2|    4    4    4    4 test.html
+2|    5    5    5    5 test1.txt
+2|    6    6    6    6 test2.txt
+2| % 
+
+logout1
+1| *** User 'demo1' left. ***
+2| *** User 'demo1' left. ***
+3| *** User 'demo1' left. ***
+4| *** User 'demo1' left. ***
+
+logout2
+2| *** User 'demo2' left. ***
+3| *** User 'demo2' left. ***
+4| *** User 'demo2' left. ***
+
+logout3
+3| *** User 'demo3' left. ***
+4| *** User 'demo3' left. ***
+
+logout4
+4| *** User 'demo4' left. ***
+
+exit

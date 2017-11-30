@@ -1,0 +1,140 @@
+
+login1
+1| ****************************************
+1| ** Welcome to the information server. **
+1| ****************************************
+1| *** User '(no name)' entered from 127.0.0.1/48171. ***
+1| % 
+
+login2
+1| *** User '(no name)' entered from 127.0.0.1/48172. ***
+2| ****************************************
+2| ** Welcome to the information server. **
+2| ****************************************
+2| *** User '(no name)' entered from 127.0.0.1/48172. ***
+2| % 
+
+login3
+1| *** User '(no name)' entered from 127.0.0.1/48173. ***
+2| *** User '(no name)' entered from 127.0.0.1/48173. ***
+3| ****************************************
+3| ** Welcome to the information server. **
+3| ****************************************
+3| *** User '(no name)' entered from 127.0.0.1/48173. ***
+3| % 
+
+login4
+1| *** User '(no name)' entered from 127.0.0.1/48174. ***
+2| *** User '(no name)' entered from 127.0.0.1/48174. ***
+3| *** User '(no name)' entered from 127.0.0.1/48174. ***
+4| ****************************************
+4| ** Welcome to the information server. **
+4| ****************************************
+4| *** User '(no name)' entered from 127.0.0.1/48174. ***
+4| % 
+
+1 % name demo1
+1| *** User from 127.0.0.1/48171 is named 'demo1'. ***
+1| % 
+2| *** User from 127.0.0.1/48171 is named 'demo1'. ***
+3| *** User from 127.0.0.1/48171 is named 'demo1'. ***
+4| *** User from 127.0.0.1/48171 is named 'demo1'. ***
+
+2 % name demo2
+1| *** User from 127.0.0.1/48172 is named 'demo2'. ***
+2| *** User from 127.0.0.1/48172 is named 'demo2'. ***
+2| % 
+3| *** User from 127.0.0.1/48172 is named 'demo2'. ***
+4| *** User from 127.0.0.1/48172 is named 'demo2'. ***
+
+3 % name demo3
+1| *** User from 127.0.0.1/48173 is named 'demo3'. ***
+2| *** User from 127.0.0.1/48173 is named 'demo3'. ***
+3| *** User from 127.0.0.1/48173 is named 'demo3'. ***
+3| % 
+4| *** User from 127.0.0.1/48173 is named 'demo3'. ***
+
+4 % name demo4
+1| *** User from 127.0.0.1/48174 is named 'demo4'. ***
+2| *** User from 127.0.0.1/48174 is named 'demo4'. ***
+3| *** User from 127.0.0.1/48174 is named 'demo4'. ***
+4| *** User from 127.0.0.1/48174 is named 'demo4'. ***
+4| % 
+
+1 % tell 5 error
+1| *** Error: user #5 does not exist yet. ***
+1| % 
+
+1 % tell 2 '  space test  '
+1| % 
+2| *** demo1 told you ***: '  space test  '
+
+2 % tell 1 did i pass the test ?  ??  ???
+1| *** demo2 told you ***: did i pass the test ?  ??  ???
+2| % 
+
+3 % yell can  you  guys  stop  whisper
+1| *** demo3 yelled ***: can  you  guys  stop  whisper
+2| *** demo3 yelled ***: can  you  guys  stop  whisper
+3| *** demo3 yelled ***: can  you  guys  stop  whisper
+3| % 
+4| *** demo3 yelled ***: can  you  guys  stop  whisper
+
+4 % yell what's happening
+1| *** demo4 yelled ***: what's happening
+2| *** demo4 yelled ***: what's happening
+3| *** demo4 yelled ***: what's happening
+4| *** demo4 yelled ***: what's happening
+4| % 
+
+1 % who
+1| <ID>	<nickname>	<IP/port>	<indicate me>
+1| 1	demo1	127.0.0.1/48171	<-me
+1| 2	demo2	127.0.0.1/48172	
+1| 3	demo3	127.0.0.1/48173	
+1| 4	demo4	127.0.0.1/48174	
+1| % 
+
+2 % who
+2| <ID>	<nickname>	<IP/port>	<indicate me>
+2| 1	demo1	127.0.0.1/48171	
+2| 2	demo2	127.0.0.1/48172	<-me
+2| 3	demo3	127.0.0.1/48173	
+2| 4	demo4	127.0.0.1/48174	
+2| % 
+
+3 % who
+3| <ID>	<nickname>	<IP/port>	<indicate me>
+3| 1	demo1	127.0.0.1/48171	
+3| 2	demo2	127.0.0.1/48172	
+3| 3	demo3	127.0.0.1/48173	<-me
+3| 4	demo4	127.0.0.1/48174	
+3| % 
+
+4 % who
+4| <ID>	<nickname>	<IP/port>	<indicate me>
+4| 1	demo1	127.0.0.1/48171	
+4| 2	demo2	127.0.0.1/48172	
+4| 3	demo3	127.0.0.1/48173	
+4| 4	demo4	127.0.0.1/48174	<-me
+4| % 
+
+logout1
+1| *** User 'demo1' left. ***
+2| *** User 'demo1' left. ***
+3| *** User 'demo1' left. ***
+4| *** User 'demo1' left. ***
+
+logout3
+3| *** User 'demo3' left. ***
+2| *** User 'demo3' left. ***
+4| *** User 'demo3' left. ***
+
+logout4
+4| *** User 'demo4' left. ***
+2| *** User 'demo4' left. ***
+
+logout2
+2| *** User 'demo2' left. ***
+
+exit
